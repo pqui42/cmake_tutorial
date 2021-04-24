@@ -1,4 +1,5 @@
 # cmake_tutorial
+
 Simple example of Modern CMake
 This contains a sample codes used in Simple Modern CMake tutorial.
 
@@ -8,8 +9,6 @@ https://levelup.gitconnected.com/simple-modern-cmake-tutorial-b0c1c362cd2c
 
 Part2: How to set and request specific package version in CMake
 https://medium.com/@koheiotsuka701/simple-modern-cmake-tutorial-part-2-285614d6a0ce
-
-
 
 
 
@@ -23,3 +22,16 @@ https://levelup.gitconnected.com/why-floating-point-numbers-are-not-always-accur
 
 Pitfalls of Templates type deduction in C++
 https://levelup.gitconnected.com/pitfalls-of-templates-type-deduction-in-c-272d66bc75aa
+
+
+# Build Commandos
+
+
+cmake -Bbuild -DCMAKE_PREFIX_PATH=/home/paul/projects/cmake_tutorial/usr/local/
+
+make -j${nproc}
+
+make DESTDIR=/home/paul/projects/cmake_tutorial/ install
+
+
+
